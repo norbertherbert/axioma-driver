@@ -161,21 +161,7 @@ function extractPoints(input) {
     return result;
 }
 
-<<<<<<< HEAD
 exports.decodeUplink = decodeUplink;
 exports.decodeDownlink = decodeDownlink;
 exports.encodeDownlink = encodeDownlink;
 exports.extractPoints = extractPoints;
-=======
-/**
- * If you would copy the content of this file to a custom driver on ThingPark X IoT Flow
- * please make sure that all lines below this text are removed!
- /*
-
-module.exports = {
-    decodeUplink: decodeUplink,
-    decodeDownlink: decodeDownlink,
-    encodeDownlink: encodeDownlink,
-    extractPoints: extractPoints
-}
->>>>>>> 030ffa634c59eb9290d27671ed20896be0fcc9af
