@@ -84,7 +84,7 @@ function decodeUplink(input) {
             time: firstLogTime, 
             volume: firstLogVolume
         });
-        for (let i=17; i < length; i+=2) {
+        for (let i=17; i < length-1; i+=2) {
             deltaVolume = bytes.readUIntLE(i, 2);
             deltaVolumes.push(deltaVolume);
             v += deltaVolume;
@@ -161,9 +161,7 @@ function extractPoints(input) {
     return result;
 }
 
-module.exports = {
-    decodeUplink: decodeUplink,
-    decodeDownlink: decodeDownlink,
-    encodeDownlink: encodeDownlink,
-    extractPoints: extractPoints
-}
+exports.decodeUplink = decodeUplink;
+exports.decodeDownlink = decodeDownlink;
+exports.encodeDownlink = encodeDownlink;
+exports.extractPoints = extractPoints;
