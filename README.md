@@ -1,1 +1,2 @@
-﻿A simple driver that can decode data sent by Axioma W1 water meters.
+This repository has been moved to a new place:
+https://github.com/actility/thingpark-iot-flow-driver-catalogue/tree/main/axioma/w1
